@@ -88,7 +88,7 @@ public:
             offset++;
         }
         if (n % 2) {
-            res[n/2][n/2] = count;
+            res[n/2][n/2] = counter;
         }
         return res;
     }
