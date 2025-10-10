@@ -164,7 +164,7 @@ public:
 
 ## 完全二叉树的节点个数
 * 题目链接：[LeetCode 222 完全二叉树的节点个数](https://leetcode.cn/problems/count-complete-tree-nodes)
-* 文章链接：[代码随想录讲解 完全二叉树的节点个数](https://programmercarl.com/0404.%E5%B7%A6%E5%8F%B6%E5%AD%90%E4%B9%8B%E5%92%8C.html)
+* 文章链接：[代码随想录讲解 完全二叉树的节点个数](https://programmercarl.com/0222.%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0.html)
 
 **看到题目的第一想法**  
 知道怎么判断是不是完全二叉树，但是不知道怎么实现。   
