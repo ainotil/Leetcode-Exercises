@@ -1,8 +1,8 @@
-# 代码随想录算法训练营 Day 14
-513. 找树左下角的值 | 112.路经总和 
+# 代码随想录算法训练营 Day 15
+513. 找树左下角的值 | 112.路经总和 | 106.从中序与后序遍历序列构造二叉树
 ---
 
-## 找树左下角的值
+## 513 - 找树左下角的值
 * 题目链接：[LeetCode 513 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/)
 * 文章链接：[代码随想录讲解 找树左下角的值](https://programmercarl.com/0513.%E6%89%BE%E6%A0%91%E5%B7%A6%E4%B8%8B%E8%A7%92%E7%9A%84%E5%80%BC.html)
 
@@ -46,9 +46,46 @@ public:
 };
 ```
 
-## 路径总和
-* 题目链接：[LeetCode 112 路径总和](https://leetcode.cn/problems/path-sum/)
+## 112 - 路径总和
+* 题目链接：[LeetCode 112 路径总和](https://leetcode.cn/problems/path-sum)
 * 文章链接：[代码随想录讲解 路径总和](https://programmercarl.com/0112.%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.html)
+
+**看到题目的第一想法**  
+比较简单，一遍过。
+
+**看完代码随想录之后的想法** 
+无。
+
+**实现过程中遇到的困难**  
+无。  
+
+---
+
+### 代码
+```cpp
+class Solution {
+public:
+    bool hasPathSum(TreeNode* root, int targetSum) {
+        return doHasPathSum(root, targetSum, 0);
+    }
+
+    bool doHasPathSum(TreeNode* root, int targetSum, int curr_sum) {
+        if (root == nullptr) {
+            return false;
+        }
+        if (root->left == nullptr && root->right == nullptr) {
+            return curr_sum + root->val == targetSum;
+        }
+
+        return doHasPathSum(root->left, targetSum, root->val + curr_sum) || doHasPathSum(root->right, targetSum, root->val + curr_sum);
+    }
+
+};
+```
+
+## 106 - 从中序与后序遍历序列构造二叉树
+* 题目链接：[LeetCode 106 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+* 文章链接：[代码随想录讲解 从中序与后序遍历序列构造二叉树](https://programmercarl.com/0106.%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.html)
 
 **看到题目的第一想法**  
 这道题挺难的，虽然看出规律了，但是细节处理不好，做不出来。

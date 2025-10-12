@@ -2,7 +2,7 @@
 110. 平衡二叉树 | 257. 二叉树的所有路径 | 404. 左子叶之和 | 222. 完全二叉树的节点个数
 ---
 
-## 平衡二叉树
+## 110 - 平衡二叉树
 * 题目链接：[LeetCode 110 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/)
 * 文章链接：[代码随想录讲解 平衡二叉树](https://programmercarl.com/0110.%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.html)
 
@@ -48,7 +48,7 @@ public:
 };
 ```
 
-## 二叉树的所有路径
+## 257 - 二叉树的所有路径
 * 题目链接：[LeetCode 257 二叉树的所有路径](https://leetcode.cn/problems/binary-tree-paths/)
 * 文章链接：[代码随想录讲解 二叉树的所有路径](https://programmercarl.com/0257.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84.html)
 
@@ -95,7 +95,7 @@ public:
 };
 ```
 
-## 左子叶之和
+## 404 - 左子叶之和
 * 题目链接：[LeetCode 404 左子叶之和](https://leetcode.cn/problems/sum-of-left-leaves/description/)
 * 文章链接：[代码随想录讲解 左子叶之和](https://programmercarl.com/0404.%E5%B7%A6%E5%8F%B6%E5%AD%90%E4%B9%8B%E5%92%8C.html)
 
@@ -162,7 +162,7 @@ public:
 };
 ```
 
-## 完全二叉树的节点个数
+## 222 - 完全二叉树的节点个数
 * 题目链接：[LeetCode 222 完全二叉树的节点个数](https://leetcode.cn/problems/count-complete-tree-nodes)
 * 文章链接：[代码随想录讲解 完全二叉树的节点个数](https://programmercarl.com/0222.%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0.html)
 
